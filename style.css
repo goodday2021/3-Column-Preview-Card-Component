@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.60); /*paragraphs*/
+    --Very-light-gray: hsl(0, 0%, 95%); /*background, headings, buttons*/
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body, button {
+    background-color: var(--Very-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container {
+    padding: 20px;
+    margin: 20px;
+}
+
+.container h1 {
+    color: var(--Very-light-gray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 43px;
+    margin: 23px 0 23px 0;
+    text-transform: uppercase;
+} 
+
+.container p {
+    color: var(--Transparent-white);
+    margin-bottom: 25px;
+    line-height: 2.35rem;
+    font-size: 14px;
+}
+
+.container .orange, .cyan, .green {
+    padding: 44px;
+}
+
+.container .orange {
+    background-color: var(--Bright-orange);
+    border-radius: 8px 8px 0 0;
+}
+
+.container .cyan {
+    background-color: var(--Dark-cyan);
+}
+
+.container .green {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 8px 8px;
+}
+
+.container button {
+    border: solid var(--Very-light-gray);
+    padding: 17px 34px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.container .orange button {
+    color: var(--Bright-orange);
+}
+
+.container .cyan button {
+    color: var(--Dark-cyan);
+}
+
+.container .green button {
+    color: var(--Very-dark-cyan);
+}
+
+.container button:hover {
+    cursor: pointer;
+    color: var(--Very-light-gray);
+    background-color: transparent;
+    transition: all 0.25s ease-in-out;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 992px) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh; /*puts the whole card in the center of the page*/
+      max-width: 900px;
+      margin: auto; /*puts the whole card in the center of the page*/
+      padding: 30px;
+    }
+  
+    .container .orange {
+      border-radius: 10px 0 0 10px;
+    }
+
+    .container .green {
+      border-radius: 0 10px 10px 0;
+    }
+  }
